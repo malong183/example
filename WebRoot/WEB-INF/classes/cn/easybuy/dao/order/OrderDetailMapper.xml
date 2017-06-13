@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.easybuy.dao.OrderDetailMapper" >
+  <resultMap id="OrderDetailMap" type="OrderDetail" >
+    <id column="id" property="id"  />
+    <result column="orderId" property="orderid"  />
+    <result column="productId" property="productid"  />
+    <result column="quantity" property="quantity"  />
+    <result column="cost" property="cost"  />
+    <association property="product" javaType="Product" resultMap="ProductMap"></association>
+  </resultMap>
+  
+   <resultMap id="ProductMap" type="Product" >
+    <id column="id" property="id" />
+    <result column="name" property="name" />
+    <result column="description" property="description" />
+    <result column="price" property="price"  />
+    <result column="stock" property="stock"  />
+    <result column="categoryLevel1Id" property="categorylevel1id"  />
+    <result column="categoryLevel2Id" property="categorylevel2id"  />
+    <result column="categoryLevel3Id" property="categorylevel3id"  />
+    <result column="fileName" property="filename"  />
+    <result column="isDelete" property="isdelete"  />
+  </resultMap>
+</mapper>
