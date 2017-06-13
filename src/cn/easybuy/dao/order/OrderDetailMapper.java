@@ -1,4 +1,4 @@
-package cn.easybuy.dao;
+package cn.easybuy.dao.order;
 
 import cn.easybuy.pojo.OrderDetail;
 

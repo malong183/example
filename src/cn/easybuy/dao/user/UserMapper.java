@@ -1,4 +1,4 @@
-package cn.easybuy.dao;
+package cn.easybuy.dao.user;
 
 import cn.easybuy.pojo.User;
 
