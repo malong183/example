@@ -8,6 +8,6 @@ public interface UserMapper {
     int insert(User record);
 
     int insertSelective(User record);
-    //查询
+    //查询单个
     User selectByPrimaryKey(Integer id);
 }
