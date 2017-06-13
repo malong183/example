@@ -8,10 +8,4 @@ public interface NewsMapper {
     int insert(News record);
 
     int insertSelective(News record);
-
-    News selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(News record);
-
-    int updateByPrimaryKey(News record);
 }
