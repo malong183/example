@@ -1,5 +1,5 @@
 package cn.easybuy.controller.backend;
 
-public class IndexController {
+public class UserManageController {
 
 }
