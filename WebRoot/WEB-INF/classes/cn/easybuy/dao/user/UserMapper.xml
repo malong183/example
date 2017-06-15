@@ -21,4 +21,16 @@
     <result column="isDefault" property="isdefault"  />
     <result column="remark" property="remark"  />
   </resultMap>
+  <select id="getLoginUser">
+  	select * from easybuy_user u
+  	<trim prefix="where" prefixOverrides="and | or">
+  		<if test="loginName != null">
+  			and u.loginName = #{loginName}
+  		</if>
+  		<if test="password != null">
+  			and u.password = #{password}
+  		</if>
+  	</trim>
+  </select>
+  
 </mapper>
